@@ -1,7 +1,12 @@
 require File.dirname(__FILE__) + '/../spec_helper'
  
 describe VotersController do
-  fixtures :all
+  #fixtures :all
+  before(:each) do
+  	(1..3).each do
+  		Factory(:voter)
+  	end
+  end
   integrate_views
   
   it "index action should render index template" do

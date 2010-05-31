@@ -2,29 +2,17 @@
 
 <table>
   <tr>
-    <th>Name Last</th>
-    <th>Name First</th>
+    <th>Name</th>
+    <th>Address</th>
     <th>Precinct</th>
-    <th>Street No</th>
-    <th>Street Dir</th>
-    <th>Street Name</th>
-    <th>Street Type</th>
-    <th>Apt</th>
-    <th>Apt No</th>
     <th>Age</th>
     <th>Phone</th>
   </tr>
   <% for voter in @voters %>
     <tr>
-      <td><%=h voter.name_last %></td>
-      <td><%=h voter.name_first %></td>
+      <td><%=h voter.full_name %></td>
+      <td><%=h voter.address %></td>
       <td><%=h voter.precinct %></td>
-      <td><%=h voter.street_no %></td>
-      <td><%=h voter.street_dir %></td>
-      <td><%=h voter.street_name %></td>
-      <td><%=h voter.street_type %></td>
-      <td><%=h voter.apt %></td>
-      <td><%=h voter.apt_no %></td>
       <td><%=h voter.age %></td>
       <td><%=h voter.phone %></td>
       <td><%= link_to "Show", voter %></td>

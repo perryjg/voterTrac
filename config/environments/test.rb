@@ -31,4 +31,5 @@ config.gem 'rspec-rails', :lib => false
 config.gem 'webrat', :lib => false
 config.gem 'factory_girl', :lib => false
 config.gem 'mocha', :lib => false
+config.gem 'faker', :lib => false
 
