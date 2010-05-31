@@ -1,0 +1,51 @@
+<% title "Voter" %>
+
+<p>
+  <strong>Name Last:</strong>
+  <%=h @voter.name_last %>
+</p>
+<p>
+  <strong>Name First:</strong>
+  <%=h @voter.name_first %>
+</p>
+<p>
+  <strong>Precinct:</strong>
+  <%=h @voter.precinct %>
+</p>
+<p>
+  <strong>Street No:</strong>
+  <%=h @voter.street_no %>
+</p>
+<p>
+  <strong>Street Dir:</strong>
+  <%=h @voter.street_dir %>
+</p>
+<p>
+  <strong>Street Name:</strong>
+  <%=h @voter.street_name %>
+</p>
+<p>
+  <strong>Street Type:</strong>
+  <%=h @voter.street_type %>
+</p>
+<p>
+  <strong>Apt:</strong>
+  <%=h @voter.apt %>
+</p>
+<p>
+  <strong>Apt No:</strong>
+  <%=h @voter.apt_no %>
+</p>
+<p>
+  <strong>Age:</strong>
+  <%=h @voter.age %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%=h @voter.phone %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_voter_path(@voter) %> |
+  <%= link_to "View All", voters_path %>
+</p>

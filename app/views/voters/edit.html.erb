@@ -1,0 +1,56 @@
+<% title "Edit Voter" %>
+
+<% form_for @voter do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name_last %><br />
+    <%= f.text_field :name_last %>
+  </p>
+  <p>
+    <%= f.label :name_first %><br />
+    <%= f.text_field :name_first %>
+  </p>
+  <p>
+    <%= f.label :precinct %><br />
+    <%= f.text_field :precinct %>
+  </p>
+  <p>
+    <%= f.label :street_no %><br />
+    <%= f.text_field :street_no %>
+  </p>
+  <p>
+    <%= f.label :street_dir %><br />
+    <%= f.text_field :street_dir %>
+  </p>
+  <p>
+    <%= f.label :street_name %><br />
+    <%= f.text_field :street_name %>
+  </p>
+  <p>
+    <%= f.label :street_type %><br />
+    <%= f.text_field :street_type %>
+  </p>
+  <p>
+    <%= f.label :apt %><br />
+    <%= f.text_field :apt %>
+  </p>
+  <p>
+    <%= f.label :apt_no %><br />
+    <%= f.text_field :apt_no %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
+<p>
+  <%= link_to "Show", @voter %> |
+  <%= link_to "View All", voters_path %>
+</p>
