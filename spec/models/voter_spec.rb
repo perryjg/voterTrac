@@ -59,6 +59,69 @@ describe Voter do
   	
   	Voter.precincts.should == %w(06 08 11 13)
   end
+  
+  it "should filter for voters not contacted" do
+	  Voter.delete_all
+  	contacted_voter = Factory.build( :voter, :contacted => 'x' )
+  	contacted_voter.save
+  	not_contacted_voter = Factory.build(:voter)
+  	not_contacted_voter.save
+  	
+  	v = Voter.not_contacted
+  	v.count.should == 1
+  	v[0].should == not_contacted_voter
+  end
+  
+  it "should filter by lit" do
+  	Voter.delete_all
+		no_lit = Factory.build(:voter)
+		no_lit.save
+		lit = Factory.build( :voter, :literature => 'x' )
+		lit.save
+  	
+  	v = Voter.lit
+  	v.count.should == 1
+  	v[0].should == lit
+  end
+
+  it "should filter for contacted by candidate" do
+	  Voter.delete_all
+  	not_contacted = Factory.build( :voter )
+  	not_contacted.save
+  	volunteer_contacted = Factory.build(:voter, :contacted => 'v' )
+  	volunteer_contacted.save
+  	candidate_contacted = Factory.build( :voter, :contacted => 'x' )
+  	candidate_contacted.save
+  	
+  	v = Voter.candidate_contacted
+  	v.count.should == 1
+  	v[0].should == candidate_contacted
+  end
+
+  it "should filter for contacted by volunteer" do
+	  Voter.delete_all
+  	not_contacted = Factory( :voter )
+  	volunteer_contacted = Factory.build(:voter, :contacted => 'v' )
+  	volunteer_contacted.save
+  	candidate_contacted = Factory.build( :voter, :contacted => 'x' )
+  	candidate_contacted.save
+  	
+  	v = Voter.volunteer_contacted
+  	v.count.should == 1
+  	v[0].should == volunteer_contacted
+  end
+  
+  it "should filter by precinct" do
+  	Voter.delete_all
+  	Factory( :voter_pct06 )
+  	Factory( :voter_pct08 )
+  	pct11_voter = Factory( :voter_pct11 )
+  	
+  	v = Voter.for_precinct( '11' )
+  	v.count.should == 1
+  	v[0].should == pct11_voter
+  end
+  
 end
 
 # == Schema Information

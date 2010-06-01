@@ -2,6 +2,13 @@ class Voter < ActiveRecord::Base
   attr_readonly :name_last, :name_first, :precinct, :street_no, :street_dir,
   							:street_name, :street_type, :apt, :apt_no, :city, :zip, :age
 	
+	named_scope :not_contacted, { :conditions => ["contacted IS NULL"] }
+	named_scope :lit, { :conditions => ["literature = 'x'"] }
+	named_scope :candidate_contacted, { :conditions => ["contacted = 'x'"] }
+	named_scope :volunteer_contacted, { :conditions => ["contacted = 'v'"] }
+	named_scope :for_precinct, lambda { |pct| { :conditions => ["precinct = ?", pct] } }
+	named_scope :default_order, { :order => 'street_name, street_number' }
+	
 	def full_name
 		self.name_last = 'NO LAST NAME' if self.name_last.nil?
 		self.name_first = 'NO FIRST NAME' if self.name_first.nil?
