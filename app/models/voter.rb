@@ -7,7 +7,7 @@ class Voter < ActiveRecord::Base
 	named_scope :candidate_contacted, { :conditions => ["contacted = 'x'"] }
 	named_scope :volunteer_contacted, { :conditions => ["contacted = 'v'"] }
 	named_scope :for_precinct, lambda { |pct| { :conditions => ["precinct = ?", pct] } }
-	named_scope :default_order, { :order => 'street_name, street_number' }
+	named_scope :default_order, { :order => 'street_name, street_no' }
 	
 	def full_name
 		self.name_last = 'NO LAST NAME' if self.name_last.nil?
