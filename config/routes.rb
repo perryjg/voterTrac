@@ -1,11 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :voters
-
-  map.resources :voters
-
-  map.resources :voters
-
-  map.resources :voters
+  map.search "walklist", :controller => 'voters', :action => 'walklist'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

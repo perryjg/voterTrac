@@ -20,4 +20,11 @@ class VotersController < ApplicationController
       render :action => 'edit'
     end
   end
+  
+  def walklist
+	  v = Voter
+	  v = v.for_precinct( params[:precinct] ) unless params[:precinct].blank?
+	  @voters = v.all
+  	render :template => 'voters/index'
+  end
 end

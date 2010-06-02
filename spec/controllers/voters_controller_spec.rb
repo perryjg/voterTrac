@@ -35,4 +35,27 @@ describe VotersController do
     put :update, :id => Voter.first
     response.should redirect_to(voter_url(assigns[:voter]))
   end
+  
+  it "/walklist should rout to walklist action" do
+  	{ :get => '/walklist' }.should route_to( :controller => 'voters', :action => 'walklist' )
+  end
+  
+  context "walklist action" do
+  	before( :each ) do
+  		Factory(:voter_pct06)
+  		get :walklist, { :precinct => '06' }
+  	end
+  	
+  	it "should render index template" do
+	  	response.should render_template(:index)
+	  end
+	  
+	  it "should assign @voters" do
+	  	assigns[:walklist].should == @voters
+	  end
+	  
+	  it "should have precinct # in text" do
+	  	response.should have_text( /06/ )
+	  end
+  end
 end
