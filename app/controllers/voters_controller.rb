@@ -24,6 +24,9 @@ class VotersController < ApplicationController
   def walklist
 	  v = Voter
 	  v = v.for_precinct( params[:precinct] ) unless params[:precinct].blank?
+	  v = v.not_contacted if params[:contacted]
+	  v = v.lit if params[:literature]
+	  v = v.default_order
 	  @voters = v.all
   	render :template => 'voters/index'
   end
