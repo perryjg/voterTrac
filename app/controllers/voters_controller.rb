@@ -1,4 +1,6 @@
 class VotersController < ApplicationController
+	before_filter :authenticate
+	
   def index
     @voters = Voter.all
   end
@@ -29,5 +31,13 @@ class VotersController < ApplicationController
 	  v = v.default_order
 	  @voters = v.all
   	render :template => 'voters/index'
+  end
+  
+  private
+  
+  def authenticate
+		authenticate_or_request_with_http_basic do |username, password|
+			username == "admin" && password == "roxy911"
+		end
   end
 end

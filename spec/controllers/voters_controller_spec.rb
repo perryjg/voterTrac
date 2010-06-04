@@ -3,6 +3,9 @@ require File.dirname(__FILE__) + '/../spec_helper'
 describe VotersController do
   #fixtures :all
   before(:each) do
+#  	@request.env['HTTP_AUTHORIZATION'] = 
+#  		ActionController::HttpAuthentication::Basic.encode_credentials( 'admin', 'roxy911' )
+		VotersController.any_instance.stubs(:authenticate).returns(true)
   	(1..3).each do
   		Factory(:voter)
   	end

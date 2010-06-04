@@ -1,7 +1,25 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Voter do
+	describe 'voter controller authentication' do
+		
+		it "should not succeed without login" do
+			visit voters_path
+			response.should_not be_success
+			response.status.should == '401 Unauthorized'
+		end
+		
+		it "should succeed with login" do
+			basic_auth( 'admin', 'roxy911' )
+			visit voters_path
+			response.should be_success
+		end
+	end
+	
 	describe 'walklist' do
+		before(:each) do
+			basic_auth( 'admin', 'roxy911' )
+		end
 		context 'filtered by precinct' do
 			before(:each) do
 				Factory.build( :voter_pct06, :name_first => 'Fred' ).save
@@ -10,7 +28,7 @@ describe Voter do
 			
 				visit voters_path
 				fill_in "Precinct", :with => '06'
-				click_button 
+				click_button
 			end
 		
 			it "should render template index" do
@@ -56,7 +74,7 @@ describe Voter do
 				Factory.build( :voter, :name_first => 'Harry', :literature => 'x' ).save
 				
 				visit voters_path
-				check 'Literature'
+				check 'Literature only'
 				click_button 
 			end
 			
