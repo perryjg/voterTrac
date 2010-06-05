@@ -64,7 +64,6 @@ describe VotersController do
   
   it "request wants csv format" do
   	get :walklist, { :format => 'csv' }
-#  	puts response.header['Content-TYpe']
   	response.header['Content-Type'].should match /text\/csv/
   end
 end

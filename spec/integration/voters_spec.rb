@@ -86,5 +86,26 @@ describe Voter do
 				response.should_not  have_text( /Fred/ )
 			end
 		end
+		
+		context "to download csv" do
+			before(:each) do
+				visit voters_path
+			end
+			
+			it "should not have download csv link if action is :index" do
+				response.should_not have_tag( 'a', 'Download CSV' )
+			end
+			
+			it "should have download csv link if action is :walklist" do
+				click_button
+				response.should have_tag( 'a', 'Download CSV' )
+			end
+			
+			it "should include previous search params in download link href" do
+				check 'contacted'
+				click_button
+				response.should have_tag( 'a[href="/walklist.csv?contacted=true&amp;precinct="]' )
+			end
+		end
 	end
 end

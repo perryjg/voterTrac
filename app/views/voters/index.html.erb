@@ -1,4 +1,7 @@
+<% if RAILS_ENV == 'development' %><%= debug params %><% end %>
+
 <% title "Voters" %>
+<p>
 <% form_tag( walklist_path, :method => "GET" ) do %>
 	<%= label_tag :precinct %>
 	<%= select_tag :precinct, options_for_select( Voter.precincts.insert( 0, '' ), params[:precinct] ) %> |
@@ -8,6 +11,12 @@
 	<%= check_box_tag :literature, true, params[:literature] %> |
 	<%= submit_tag "Select Voters", :name => nil %>
 <% end %>
+</p>
+
+<% if params[:action] == 'walklist' %>
+	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+<% end %>
+
 <table>
   <tr>
     <th>Name</th>
