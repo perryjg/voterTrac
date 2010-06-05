@@ -29,8 +29,13 @@ class VotersController < ApplicationController
 	  v = v.not_contacted if params[:contacted]
 	  v = v.lit if params[:literature]
 	  v = v.default_order
+	  
 	  @voters = v.all
-  	render :template => 'voters/index'
+	  
+	  respond_to do |wants|
+  		wants.html { render :template => 'voters/index' }
+  		wants.csv  { render :text => @voters.to_csv }
+  	end
   end
   
   private

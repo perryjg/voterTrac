@@ -61,4 +61,10 @@ describe VotersController do
 	  	response.should have_text( /06/ )
 	  end
   end
+  
+  it "request wants csv format" do
+  	get :walklist, { :format => 'csv' }
+#  	puts response.header['Content-TYpe']
+  	response.header['Content-Type'].should match /text\/csv/
+  end
 end
