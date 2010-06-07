@@ -27,6 +27,7 @@ class VotersController < ApplicationController
 	  v = Voter
 	  v = v.for_precinct( params[:precinct] ) unless params[:precinct].blank?
 	  v = v.not_contacted if params[:contacted]
+	  v = v.volunteer_contacted if params[:volunteer]
 	  v = v.lit if params[:literature]
 	  v = v.default_order
 	  

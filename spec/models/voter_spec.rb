@@ -121,7 +121,6 @@ describe Voter do
   	v.count.should == 1
   	v[0].should == pct11_voter
   end
-  
 end
 
 # == Schema Information

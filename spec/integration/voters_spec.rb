@@ -68,6 +68,30 @@ describe Voter do
 			end
 		end
 		
+		context "filtered by volunteer contacted" do
+			before(:each) do
+				Factory.build( :voter, :name_first => 'Fred' ).save
+				Factory.build( :voter, :name_first => 'Harry', :contacted => 'v' ).save
+				Factory.build( :voter, :name_first => 'George', :contacted => 'x' ).save
+				
+				visit voters_path
+				check 'Volunteer contacted'
+				click_button 
+			end
+			
+			it "should include volunter-contacted voter" do
+				response.should include_text( 'Harry' )
+			end
+			
+			it "should not include not-contacted voter Fred" do
+				response.should_not include_text( 'Fred' )
+			end
+			
+			it "should not include candidate-contacted voter George" do
+				response.should_not include_text( 'George' )
+			end
+		end
+		
 		context "filtered by literature" do
 			before(:each) do
 				Factory.build( :voter, :name_first => 'Fred' ).save

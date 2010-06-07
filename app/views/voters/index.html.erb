@@ -7,6 +7,8 @@
 	<%= select_tag :precinct, options_for_select( Voter.precincts.insert( 0, '' ), params[:precinct] ) %> |
 	<%= label_tag :contacted, "Not contacted" %>
 	<%= check_box_tag :contacted, true, params[:contacted] %> |
+	<%= label_tag :volunteer, "Volunteer contacted" %>
+	<%= check_box_tag :volunteer, true, params[:volunteer] %> |
 	<%= label_tag :literature, "Literature only" %>
 	<%= check_box_tag :literature, true, params[:literature] %> |
 	<%= submit_tag "Select Voters", :name => nil %>
