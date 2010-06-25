@@ -8,6 +8,7 @@ class Voter < ActiveRecord::Base
 	named_scope :volunteer_contacted, { :conditions => ["contacted = 'v'"] }
 	named_scope :for_precinct, lambda { |pct| { :conditions => ["precinct = ?", pct] } }
 	named_scope :default_order, { :order => 'street_name, street_no' }
+	named_scope :yardsign, { :conditions => ['ys IS NOT NULL'] }
 	
 	acts_as_csv_exportable :default, [ :id, :name_last, :name_first, :street_no, :street_dir,
 																		 :street_name, :street_type, :apt, :apt_no, :city, :zip,

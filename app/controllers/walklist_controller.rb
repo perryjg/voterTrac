@@ -5,6 +5,7 @@ class WalklistController < ApplicationController
 	  v = v.not_contacted if params[:contacted]
 	  v = v.volunteer_contacted if params[:volunteer]
 	  v = v.lit if params[:literature]
+	  v = v.yardsign if params[:yardsign]
 	  v = v.default_order
 	  
 	  @voters = v.all

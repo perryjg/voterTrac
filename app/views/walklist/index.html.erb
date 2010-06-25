@@ -11,6 +11,8 @@
 	<%= check_box_tag :volunteer, true, params[:volunteer] %> |
 	<%= label_tag :literature, "Literature only" %>
 	<%= check_box_tag :literature, true, params[:literature] %> |
+	<%= label_tag :yardsign, "Yard sign" %>
+	<%= check_box_tag :yardsign, true, params[:yardsign] %> |
 	<%= submit_tag "Select Voters", :name => nil %>
 <% end %>
 </p>
@@ -26,6 +28,7 @@
     <th>Phone</th>
     <th>Contacted</th>
     <th>Lit</th>
+    <th>yard sign</th>
   </tr>
   <% for voter in @voters %>
     <tr>
@@ -36,6 +39,7 @@
       <td><%=h voter.phone %></td>
       <td style="text-align:center"><%=h voter.contacted %></td>
       <td style="text-align:center"><%=h voter.literature %></td>
+      <td style="text-align:center"><%=h voter.ys %></td>
       <td><%= link_to "Show", voter %></td>
       <td><%= link_to "Edit", edit_voter_path(voter) %></td>
     </tr>
