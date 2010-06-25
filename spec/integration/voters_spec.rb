@@ -26,7 +26,7 @@ describe Voter do
 				Factory.build( :voter_pct06, :name_first => 'Harry', :contacted => 'x' ).save
 				Factory.build( :voter_pct08, :name_first => 'George' ).save
 			
-				visit voters_path
+				visit walklist_path
 				fill_in "Precinct", :with => '06'
 				click_button
 			end
@@ -50,7 +50,7 @@ describe Voter do
 				Factory.build( :voter, :name_first => 'Harry', :contacted => 'x' ).save
 				Factory.build( :voter, :name_first => 'George', :literature => 'x' ).save
 				
-				visit voters_path
+				visit walklist_path
 				check 'contacted'
 				click_button 
 			end
@@ -74,7 +74,7 @@ describe Voter do
 				Factory.build( :voter, :name_first => 'Harry', :contacted => 'v' ).save
 				Factory.build( :voter, :name_first => 'George', :contacted => 'x' ).save
 				
-				visit voters_path
+				visit walklist_path
 				check 'Volunteer contacted'
 				click_button 
 			end
@@ -97,7 +97,7 @@ describe Voter do
 				Factory.build( :voter, :name_first => 'Fred' ).save
 				Factory.build( :voter, :name_first => 'Harry', :literature => 'x' ).save
 				
-				visit voters_path
+				visit walklist_path
 				check 'Literature only'
 				click_button 
 			end
@@ -113,14 +113,9 @@ describe Voter do
 		
 		context "to download csv" do
 			before(:each) do
-				visit voters_path
+				visit walklist_path
 			end
-			
-			it "should not have download csv link if action is :index" do
-				response.should_not have_tag( 'a', 'Download CSV' )
-			end
-			
-			it "should have download csv link if action is :walklist" do
+			it "should have download csv link" do
 				click_button
 				response.should have_tag( 'a', 'Download CSV' )
 			end

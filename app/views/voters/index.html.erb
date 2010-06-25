@@ -11,36 +11,9 @@
 	<%= check_box_tag :volunteer, true, params[:volunteer] %> |
 	<%= label_tag :literature, "Literature only" %>
 	<%= check_box_tag :literature, true, params[:literature] %> |
-	<%= submit_tag "Select Voters", :name => nil %>
+	<%= submit_tag "Create Walklist", :name => nil %>
 <% end %>
 </p>
-
-<% if params[:action] == 'walklist' %>
-	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
-<% end %>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Precinct</th>
-    <th>Age</th>
-    <th>Phone</th>
-    <th>Contacted</th>
-    <th>Lit</th>
-  </tr>
-  <% for voter in @voters %>
-    <tr>
-      <td><%=h voter.full_name %></td>
-      <td><%=h voter.address %></td>
-      <td><%=h voter.precinct %></td>
-      <td><%=h voter.age %></td>
-      <td><%=h voter.phone %></td>
-      <td style="text-align:center"><%=h voter.contacted %></td>
-      <td style="text-align:center"><%=h voter.literature %></td>
-      <td><%= link_to "Show", voter %></td>
-      <td><%= link_to "Edit", edit_voter_path(voter) %></td>
-    </tr>
-  <% end %>
-</table>
-
+<% Voter.precincts.each do |p| %>
+	<p>Precinct <%= p %>: <%= number_to_percentage( Voter.progress(p), :precision => 1 ) %></p>
+<%end %>

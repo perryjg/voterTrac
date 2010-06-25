@@ -1,0 +1,1082 @@
+Script started on Thu 10 Jun 2010 11:11:22 PM EDT
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/models[Kspec spec/models[Kmodels[Kspec spec/models[Kgit st
+# On branch index-page-charts
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   app/models/voter.rb[m
+#	[31mmodified:   spec/models/voter_spec.rb[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mgenerate[m
+#	[31mvendor/plugins/google_charts_on_rails/[m
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ git stspec spec/models[10Pgit st[Kgit stspec spec/models[K[1P[C[C[C[C[C[C[C[C[C[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmodels[10Pgit st[Ksctipt/generte[K[Kate rspec_controlles[Kr
+bash: sctipt/generate: No such file or directory
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ sc[K[Kls script/
+[0m[01;32mabout[0m  [01;32mautospec[0m  [01;32mconsole[0m  [01;32mdbconsole[0m  [01;32mdestroy[0m  [01;32mgenerate[0m  [01;34mperformance[0m  [01;32mplugin[0m  [01;32mrunner[0m  [01;32mserver[0m  [01;32mspec[0m
+[m]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ script/generate rspec_controller walklist index
+      exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/walklist
+      exists  spec/controllers/
+      create  spec/helpers/
+      create  spec/views/walklist
+      create  spec/controllers/walklist_controller_spec.rb
+      create  spec/helpers/walklist_helper_spec.rb
+      create  app/controllers/walklist_controller.rb
+      create  app/helpers/walklist_helper.rb
+      create  spec/views/walklist/index.html.erb_spec.rb
+      create  app/views/walklist/index.html.erb
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.222473 seconds
+
+[32m13 examples, 0 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+Finished in 0.237695 seconds
+
+[31m14 examples, 3 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+Finished in 0.237057 seconds
+
+[31m14 examples, 3 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m
+
+1)
+[31mActionView::TemplateError in 'VotersController walklist action should render index template'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+2)
+[31mActionView::TemplateError in 'VotersController walklist action should assign @voters'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+3)
+[31mActionView::TemplateError in 'VotersController walklist action should have precinct # in text'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+4)
+[31mTest::Unit::AssertionFailedError in 'VotersController /walklist should rout to walklist action'
+The recognized options <{"action"=>"index", "controller"=>"walklist"}> did not match <{"action"=>"walklist", "controller"=>"voters"}>, difference: <{"action"=>"walklist", "controller"=>"voters"}>
+If you're expecting this failure, we suggest { :get => "/walklist" }.should_not be_routable[0m
+/home/john/railsapps/voterTrac/spec/controllers/voters_controller_spec.rb:43:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+Finished in 0.318395 seconds
+
+[31m14 examples, 7 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ rake routes
+(in /home/john/railsapps/voterTrac)
+    voters GET    /voters(.:format)                  {:controller=>"voters", :action=>"index"}
+           POST   /voters(.:format)                  {:controller=>"voters", :action=>"create"}
+ new_voter GET    /voters/new(.:format)              {:controller=>"voters", :action=>"new"}
+edit_voter GET    /voters/:id/edit(.:format)         {:controller=>"voters", :action=>"edit"}
+     voter GET    /voters/:id(.:format)              {:controller=>"voters", :action=>"show"}
+           PUT    /voters/:id(.:format)              {:controller=>"voters", :action=>"update"}
+           DELETE /voters/:id(.:format)              {:controller=>"voters", :action=>"destroy"}
+  walklist        /walklist(.:format)                {:controller=>"walklist", :action=>"index"}
+                  /:controller/:action/:id           
+                  /:controller/:action/:id(.:format) 
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+1)
+[31mActionView::TemplateError in 'VotersController walklist action should render index template'
+walklist_url failed to generate from {:controller=>"voters", :action=>"walklist", :format=>"csv", :precinct=>"06"}, expected: {:controller=>"walklist", :action=>"index"}, diff: {:controller=>"walklist", :action=>"index", :format=>"csv", :precinct=>"06"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+2)
+[31mActionView::TemplateError in 'VotersController walklist action should assign @voters'
+walklist_url failed to generate from {:controller=>"voters", :action=>"walklist", :format=>"csv", :precinct=>"06"}, expected: {:controller=>"walklist", :action=>"index"}, diff: {:controller=>"walklist", :action=>"index", :format=>"csv", :precinct=>"06"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+3)
+[31mActionView::TemplateError in 'VotersController walklist action should have precinct # in text'
+walklist_url failed to generate from {:controller=>"voters", :action=>"walklist", :format=>"csv", :precinct=>"06"}, expected: {:controller=>"walklist", :action=>"index"}, diff: {:controller=>"walklist", :action=>"index", :format=>"csv", :precinct=>"06"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+4)
+[31mTest::Unit::AssertionFailedError in 'VotersController /walklist should rout to walklist action'
+The recognized options <{"action"=>"index", "controller"=>"walklist"}> did not match <{"action"=>"walklist", "controller"=>"voters"}>, difference: <{"action"=>"walklist", "controller"=>"voters"}>
+If you're expecting this failure, we suggest { :get => "/walklist" }.should_not be_routable[0m
+/home/john/railsapps/voterTrac/spec/controllers/voters_controller_spec.rb:43:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+8)
+[31m'Voter walklist to download csv should have download csv link if action is :walklist' FAILED
+Expected at least 1 element matching "a", found 0.
+<false> is not true.[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:125:
+
+9)
+[31m'Voter walklist to download csv should include previous search params in download link href' FAILED
+Expected at least 1 element matching "a[href='/walklist.csv?contacted=true&amp;precinct=']", found 0.
+<false> is not true.[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:131:
+
+10)
+[31m'Voter walklist filtered by literature should include the text 'Harry'' FAILED
+expected /Harry/, got "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Untitled</title>\n    <link href=\"/stylesheets/application.css?1275619105\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    \n  </head>\n  <body>\n    <div id=\"container\">\n      \n      \n      <h1>Walklist#index</h1>\n<p>Find me in app/views/walklist/index.html.erb</p>\n\n    </div>\n  </body>\n</html>\n"[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:106:
+
+11)
+[31m'Voter walklist filtered by volunteer contacted should include volunter-contacted voter' FAILED
+expected to find "Harry" in "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Untitled</title>\n    <link href=\"/stylesheets/application.css?1275619105\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    \n  </head>\n  <body>\n    <div id=\"container\">\n      \n      \n      <h1>Walklist#index</h1>\n<p>Find me in app/views/walklist/index.html.erb</p>\n\n    </div>\n  </body>\n</html>\n"[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:83:
+
+12)
+[31m'Voter walklist filtered by contacted should include voter not contacted: Fred' FAILED
+expected /Fred/, got "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Untitled</title>\n    <link href=\"/stylesheets/application.css?1275619105\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    \n  </head>\n  <body>\n    <div id=\"container\">\n      \n      \n      <h1>Walklist#index</h1>\n<p>Find me in app/views/walklist/index.html.erb</p>\n\n    </div>\n  </body>\n</html>\n"[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:59:
+
+13)
+[31m'Voter walklist filtered by precinct should include the include precinct 06 voter: 'Fred'' FAILED
+expected /Fred/, got "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Untitled</title>\n    <link href=\"/stylesheets/application.css?1275619105\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    \n  </head>\n  <body>\n    <div id=\"container\">\n      \n      \n      <h1>Walklist#index</h1>\n<p>Find me in app/views/walklist/index.html.erb</p>\n\n    </div>\n  </body>\n</html>\n"[0m
+/home/john/railsapps/voterTrac/spec/integration/voters_spec.rb:39:
+
+Finished in 0.955909 seconds
+
+[31m50 examples, 13 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/[K
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m
+
+1)
+[31mActionView::TemplateError in 'VotersController walklist action should render index template'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+2)
+[31mActionView::TemplateError in 'VotersController walklist action should assign @voters'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+3)
+[31mActionView::TemplateError in 'VotersController walklist action should have precinct # in text'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+4)
+[31mTest::Unit::AssertionFailedError in 'VotersController /walklist should rout to walklist action'
+The recognized options <{"action"=>"index", "controller"=>"walklist"}> did not match <{"action"=>"walklist", "controller"=>"voters"}>, difference: <{"action"=>"walklist", "controller"=>"voters"}>
+If you're expecting this failure, we suggest { :get => "/walklist" }.should_not be_routable[0m
+/home/john/railsapps/voterTrac/spec/controllers/voters_controller_spec.rb:43:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+Finished in 0.282168 seconds
+
+[31m14 examples, 7 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ 4[Kspec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionView::TemplateError in 'VotersController walklist action should render index template'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+2)
+[31mActionView::TemplateError in 'VotersController walklist action should assign @voters'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+3)
+[31mActionView::TemplateError in 'VotersController walklist action should have precinct # in text'
+walklist_url failed to generate from {:precinct=>"06", :action=>"walklist", :controller=>"voters", :format=>"csv"}, expected: {:action=>"index", :controller=>"walklist"}, diff: {:precinct=>"06", :action=>"index", :controller=>"walklist", :format=>"csv"}[0m
+On line #19 of app/views/voters/index.html.erb
+
+    16: </p>
+    17: 
+    18: <% if params[:action] == 'walklist' %>
+    19: 	<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+    20: <% end %>
+    21: 
+    22: <table>
+
+    (eval):20:in `walklist_path'
+    app/views/voters/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+    app/controllers/voters_controller.rb:37:in `walklist'
+    app/controllers/voters_controller.rb:36:in `walklist'
+    spec/controllers/voters_controller_spec.rb:49
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+4)
+[31mTest::Unit::AssertionFailedError in 'VotersController /walklist should rout to walklist action'
+The recognized options <{"action"=>"index", "controller"=>"walklist"}> did not match <{"action"=>"walklist", "controller"=>"voters"}>, difference: <{"action"=>"walklist", "controller"=>"voters"}>
+If you're expecting this failure, we suggest { :get => "/walklist" }.should_not be_routable[0m
+/home/john/railsapps/voterTrac/spec/controllers/voters_controller_spec.rb:43:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+8)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+9)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+10)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should have precinct # in text'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+11)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:46:
+
+Finished in 0.292746 seconds
+
+[31m18 examples, 11 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ 
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:147:in `load_without_new_constant_marking': /home/john/railsapps/voterTrac/spec/controllers/voters_controller_spec.rb:47: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:147:in `load'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /usr/bin/spec:19:in `load'
+	from /usr/bin/spec:19
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+4)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should have precinct # in text'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:46:
+
+Finished in 0.133923 seconds
+
+[31m13 examples, 7 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ [K[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+4)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should have precinct # in text'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:46:
+
+Finished in 0.137349 seconds
+
+[31m13 examples, 7 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should be successful'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' index action should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+4)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should render index template'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+5)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should assign @voters'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+6)
+[31mActionController::UnknownAction in 'WalklistController GET 'index' should have precinct # in text'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:15:
+
+7)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:46:
+
+Finished in 0.133175 seconds
+
+[31m13 examples, 7 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m
+
+1)
+[31m'WalklistController GET 'index' should have precinct # in text' FAILED
+expected /06/, got "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Untitled</title>\n    <link href=\"/stylesheets/application.css?1275619105\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    \n  </head>\n  <body>\n    <div id=\"container\">\n      \n      \n      <h1>Walklist#index</h1>\n<p>Find me in app/views/walklist/index.html.erb</p>\n\n    </div>\n  </body>\n</html>\n"[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:40:
+
+2)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:45:
+
+Finished in 0.143888 seconds
+
+[31m13 examples, 2 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:45:
+
+Finished in 0.21604 seconds
+
+[31m13 examples, 1 failure[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m
+
+1)
+[31m'WalklistController GET 'index' index action should render index template' FAILED
+expected "index", got "voters/index.html.erb"[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:24:
+
+2)
+[31m'WalklistController GET 'index' should render index template' FAILED
+expected "index", got "voters/index.html.erb"[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:32:
+
+3)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:45:
+
+Finished in 0.223117 seconds
+
+[31m13 examples, 3 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:45:
+
+Finished in 0.216435 seconds
+
+[31m13 examples, 1 failure[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m
+
+1)
+[31mActionController::UnknownAction in 'WalklistController request wants csv format'
+No action responded to walklist. Actions: index[0m
+/home/john/railsapps/voterTrac/spec/controllers/walklist_controller_spec.rb:45:
+
+Finished in 0.232037 seconds
+
+[31m13 examples, 1 failure[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.218651 seconds
+
+[32m13 examples, 0 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ rake routes
+(in /home/john/railsapps/voterTrac)
+    voters GET    /voters(.:format)                  {:controller=>"voters", :action=>"index"}
+           POST   /voters(.:format)                  {:controller=>"voters", :action=>"create"}
+ new_voter GET    /voters/new(.:format)              {:controller=>"voters", :action=>"new"}
+edit_voter GET    /voters/:id/edit(.:format)         {:controller=>"voters", :action=>"edit"}
+     voter GET    /voters/:id(.:format)              {:controller=>"voters", :action=>"show"}
+           PUT    /voters/:id(.:format)              {:controller=>"voters", :action=>"update"}
+           DELETE /voters/:id(.:format)              {:controller=>"voters", :action=>"destroy"}
+  walklist        /walklist(.:format)                {:controller=>"walklist", :action=>"index"}
+                  /:controller/:action/:id           
+                  /:controller/:action/:id(.:format) 
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ rake routesspec spec/controllers
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.224961 seconds
+
+[32m13 examples, 0 failures[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+1)
+[31mActionView::TemplateError in '/walklist/index should tell you where to find the file'
+You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each[0m
+On line #30 of app/views/walklist/index.html.erb
+
+    27:     <th>Contacted</th>
+    28:     <th>Lit</th>
+    29:   </tr>
+    30:   <% for voter in @voters %>
+    31:     <tr>
+    32:       <td><%=h voter.full_name %></td>
+    33:       <td><%=h voter.address %></td>
+
+    app/views/walklist/index.html.erb:30
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/view_example_group.rb:170:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2/lib/spec/rails/example/view_example_group.rb:170:in `render'
+    spec/views/walklist/index.html.erb_spec.rb:5
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:74:in `eval_each_fail_fast'
+    rspec (1.3.0) lib/spec/example/example_group_hierarchy.rb:17:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:107:in `run_before_each'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:128:in `before_each_example'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:39:in `execute'
+    /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /usr/bin/spec:19:in `load'
+    /usr/bin/spec:19
+
+Finished in 1.009918 seconds
+
+[31m49 examples, 1 failure[0m
+]0;john@ubuntu: ~/railsapps/voterTrac[01;32mjohn@ubuntu[00m:[01;34m~/railsapps/voterTrac[00m$ spec spec/
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32

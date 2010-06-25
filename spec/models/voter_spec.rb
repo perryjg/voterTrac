@@ -121,6 +121,35 @@ describe Voter do
   	v.count.should == 1
   	v[0].should == pct11_voter
   end
+  
+  context "progress report stats" do
+  	before(:each) do
+  		Factory.build( :voter_pct06, :contacted => 'x', :literature => 'x' ).save
+  		Factory.build( :voter_pct06, :contacted => 'v', :literature => 'x' ).save
+  		Factory.build( :voter_pct06, :literature => 'x' ).save
+  		Factory( :voter_pct06 )
+  	end
+  	
+  	it "should return progress for a precinct" do
+  		Voter.progress( '06' ).should == 50
+  	end
+  	
+  	it "should return candidate-contacted progress" do
+  		Voter.progress_candidate( '06' ).should == 25
+  	end
+  	
+  	it "should return volunteer-contacted progress" do
+  		Voter.progress_volunteer( '06' ).should == 25
+  	end
+  	
+  	it "should return literature progress" do
+  		Voter.progress_literature( '06' ).should == 75
+  	end
+  	
+  	it "should return literature-only progress" do
+  		Voter.progress_literature_only( '06' ).should == 25
+  	end
+  end
 end
 
 # == Schema Information

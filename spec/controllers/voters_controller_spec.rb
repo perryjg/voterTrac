@@ -12,11 +12,12 @@ describe VotersController do
   end
   integrate_views
   
-  it "index action should render index template" do
-    get :index
-    response.should render_template(:index)
+  context "index action" do
+		it "should render index template" do
+		  get :index
+		  response.should render_template(:index)
+		end
   end
-  
   it "show action should render show template" do
     get :show, :id => Voter.first
     response.should render_template(:show)
@@ -39,31 +40,5 @@ describe VotersController do
     response.should redirect_to(voter_url(assigns[:voter]))
   end
   
-  it "/walklist should rout to walklist action" do
-  	{ :get => '/walklist' }.should route_to( :controller => 'voters', :action => 'walklist' )
-  end
   
-  context "walklist action" do
-  	before( :each ) do
-  		Factory(:voter_pct06)
-  		get :walklist, { :precinct => '06' }
-  	end
-  	
-  	it "should render index template" do
-	  	response.should render_template(:index)
-	  end
-	  
-	  it "should assign @voters" do
-	  	assigns[:walklist].should == @voters
-	  end
-	  
-	  it "should have precinct # in text" do
-	  	response.should have_text( /06/ )
-	  end
-  end
-  
-  it "request wants csv format" do
-  	get :walklist, { :format => 'csv' }
-  	response.header['Content-Type'].should match /text\/csv/
-  end
 end

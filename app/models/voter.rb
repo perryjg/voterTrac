@@ -31,7 +31,37 @@ class Voter < ActiveRecord::Base
 	end
 	
 	def self.precincts
-		Voter.find( :all, :select => 'DISTINCT precinct', :conditions=> ['precinct IS NOT NULL'] ).map { |p| p.precinct }
+		self.find( :all, :select => 'DISTINCT precinct', :conditions=> ['precinct IS NOT NULL'] ).map { |p| p.precinct }
+	end
+	
+	def self.progress( precinct )
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted IS NOT NULL", precinct] ).count
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		return contacted.to_f / total * 100 
+	end
+	
+	def self.progress_candidate( precinct )
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'x'", precinct] ).count
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		return contacted.to_f / total * 100 
+	end
+	
+	def self.progress_volunteer( precinct )
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'v'", precinct] ).count
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		return contacted.to_f / total * 100 
+	end
+	
+	def self.progress_literature( precinct )
+		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x'", precinct] ).count
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		return contacted.to_f / total * 100 
+	end
+	
+	def self.progress_literature_only( precinct )
+		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x' AND contacted IS NULL", precinct] ).count
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		return contacted.to_f / total * 100 
 	end
 end
 

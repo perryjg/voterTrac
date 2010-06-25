@@ -1,0 +1,44 @@
+<% if RAILS_ENV == 'development' %><%= debug params %><% end %>
+
+<% title "Walklist" %>
+<p>
+<% form_tag( walklist_path, :method => "GET" ) do %>
+	<%= label_tag :precinct %>
+	<%= select_tag :precinct, options_for_select( Voter.precincts.insert( 0, '' ), params[:precinct] ) %> |
+	<%= label_tag :contacted, "Not contacted" %>
+	<%= check_box_tag :contacted, true, params[:contacted] %> |
+	<%= label_tag :volunteer, "Volunteer contacted" %>
+	<%= check_box_tag :volunteer, true, params[:volunteer] %> |
+	<%= label_tag :literature, "Literature only" %>
+	<%= check_box_tag :literature, true, params[:literature] %> |
+	<%= submit_tag "Select Voters", :name => nil %>
+<% end %>
+</p>
+
+<p><%= link_to "Download CSV", walklist_path( :format => 'csv', :params => params ) %></p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Precinct</th>
+    <th>Age</th>
+    <th>Phone</th>
+    <th>Contacted</th>
+    <th>Lit</th>
+  </tr>
+  <% for voter in @voters %>
+    <tr>
+      <td><%=h voter.full_name %></td>
+      <td><%=h voter.address %></td>
+      <td><%=h voter.precinct %></td>
+      <td><%=h voter.age %></td>
+      <td><%=h voter.phone %></td>
+      <td style="text-align:center"><%=h voter.contacted %></td>
+      <td style="text-align:center"><%=h voter.literature %></td>
+      <td><%= link_to "Show", voter %></td>
+      <td><%= link_to "Edit", edit_voter_path(voter) %></td>
+    </tr>
+  <% end %>
+</table>
+

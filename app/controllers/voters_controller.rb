@@ -1,8 +1,6 @@
 class VotersController < ApplicationController
-	before_filter :authenticate
-	
   def index
-    @voters = Voter.all
+  	@progress_reports = Hash.new
   end
   
   def show
@@ -37,13 +35,5 @@ class VotersController < ApplicationController
   		wants.html { render :template => 'voters/index' }
   		wants.csv  { render :text => @voters.to_csv }
   	end
-  end
-  
-  private
-  
-  def authenticate
-		authenticate_or_request_with_http_basic do |username, password|
-			username == "admin" && password == "roxy911"
-		end
   end
 end
