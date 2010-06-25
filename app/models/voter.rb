@@ -35,32 +35,32 @@ class Voter < ActiveRecord::Base
 	end
 	
 	def self.progress( precinct )
-		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted IS NOT NULL", precinct] ).count
-		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted IS NOT NULL", precinct] ).length
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).length
 		return contacted.to_f / total * 100 
 	end
 	
 	def self.progress_candidate( precinct )
-		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'x'", precinct] ).count
-		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'x'", precinct] ).length
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).length
 		return contacted.to_f / total * 100 
 	end
 	
 	def self.progress_volunteer( precinct )
-		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'v'", precinct] ).count
-		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		contacted = self.find( :all, :conditions => ["precinct = ? AND contacted = 'v'", precinct] ).length
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).length
 		return contacted.to_f / total * 100 
 	end
 	
 	def self.progress_literature( precinct )
-		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x'", precinct] ).count
-		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x'", precinct] ).length
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).length
 		return contacted.to_f / total * 100 
 	end
 	
 	def self.progress_literature_only( precinct )
-		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x' AND contacted IS NULL", precinct] ).count
-		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).count
+		contacted = self.find( :all, :conditions => ["precinct = ? AND literature = 'x' AND contacted IS NULL", precinct] ).length
+		total = self.find( :all, :conditions =>["precinct = ?", precinct] ).length
 		return contacted.to_f / total * 100 
 	end
 end
